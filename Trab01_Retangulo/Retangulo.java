@@ -1,11 +1,11 @@
 /************************************************************************************/
-/* InstituiÁ„o: Universidade Federal de Santa Catarina                                          */
-/*                    Departamento de Inform·tica e EstatÌstica                                      */
+/* Institui√ß√£o: Universidade Federal de Santa Catarina                                          */
+/*                    Departamento de Inform√°tica e Estat√≠stica                                      */
 /* Turma : 01208A                                                                                                 */
 /* Autor: Johnaltan Ivon Neves - johnaltan@gmail.com                                          */
 /*                                                                                                                           */
 /* Projeto: Trabalho 01                                                                                          */
-/* DescriÁ„o: Software para calcular ·rea e perÌmetro de ret‚ngulo                      */
+/* Descri√ß√£o: Software para calcular √°rea e per√≠metro de ret√¢ngulo                      */
 /*                                                                                                                           */
 /************************************************************************************/
 
