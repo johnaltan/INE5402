@@ -1,3 +1,14 @@
+/************************************************************************************/
+/* Instituição: Universidade Federal de Santa Catarina                                          */
+/*                    Departamento de Informática e Estatística                                      */
+/* Turma : 01208A                                                                                                 */
+/* Autor: Johnaltan Ivon Neves - johnaltan@gmail.com                                          */
+/*                                                                                                                           */
+/* Projeto: Trabalho 01                                                                                          */
+/* Descrição: Software para calcular área e perímetro de retângulo                      */
+/*                                                                                                                           */
+/************************************************************************************/
+
 public class Retangulo {
 	private double base;
 	private double altura;
