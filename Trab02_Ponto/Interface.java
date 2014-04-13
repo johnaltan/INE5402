@@ -22,6 +22,5 @@ public class Interface {
 	
 	public void mostreValor(String msg, double valor){
 		JOptionPane.showMessageDialog(null,msg + valor);
-	}
-	
+	}	
 }
