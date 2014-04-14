@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>calculaMediaAluno</label>
+	</settings>
+	<users>
+		<user>
+			<path>calculaMediaAluno.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>calculaMediaAluno.jcp</path>
+		</project>
+	</projects>
+</workspace>

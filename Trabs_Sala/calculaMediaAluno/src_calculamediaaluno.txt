@@ -1,0 +1,3 @@
+"C:\\Users\\aluno\\Documents\\JCreator LE\\MyProjects\\calculaMediaAluno\\Aluno.java"
+"C:\\Users\\aluno\\Documents\\JCreator LE\\MyProjects\\calculaMediaAluno\\Interface.java"
+"C:\\Users\\aluno\\Documents\\JCreator LE\\MyProjects\\calculaMediaAluno\\Principal.java"
