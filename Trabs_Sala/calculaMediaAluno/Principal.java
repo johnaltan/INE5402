@@ -26,8 +26,10 @@ public class Principal{
         alunos.adicionaAluno(new Aluno("Getulio"));
         alunos.adicionaAluno(new Aluno("Cabreston"));
         
-        System.out.println("Aluno n = 1, tem nome: " + alunos.pegaAluno(1).informaNome());
-        System.out.println("Aluno n = 2, tem nome: " + alunos.pegaAluno(2).informaNome());
+        System.out.println("Aluno n = 1, tem nome: " + alunos.pegaAluno(0).informaNome());
+        System.out.println("Aluno n = 2, tem nome: " + alunos.pegaAluno(4).informaNome());
+        
+        System.out.println("Aluno nome: " + alunos.pegaAluno("Getulio").informaNome());
         
     }
 }

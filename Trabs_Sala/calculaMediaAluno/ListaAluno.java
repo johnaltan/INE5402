@@ -1,5 +1,5 @@
 public class ListaAluno {
-
+    
     private Aluno aluno;
     private ListaAluno proxAluno;
     
@@ -10,20 +10,37 @@ public class ListaAluno {
     
     public Aluno pegaAluno(int nAluno){
         int n = 0;
-        ListaAluno prox;
+        ListaAluno prox = proxAluno;
         do{
-            prox = pegaProximo();
             if(n == nAluno) return prox.informeAluno();
             n++;
+            prox = prox.pegaProximo();
         }while(prox != null);
         return null;
+    }
+    
+    public Aluno pegaAluno(String nomeAluno){
+        ListaAluno prox = proxAluno;
+        do{
+            Aluno a = prox.informeAluno();
+            if(a.informaNome().equals(nomeAluno)) return a;
+            prox = prox.pegaProximo();
+        }while(prox != null);
+        return null;
+    }
+    
+    public void adicionaAluno(Aluno vAluno){
+        ListaAluno novo = new ListaAluno();
+        novo.recebaValorAluno(vAluno);
+        novo.recebaValorProx(proxAluno);
+        proxAluno = novo;
     }
     
     public Aluno informeAluno(){
         return aluno;
     }
     
-    public ListaAluno pegaProximo(){
+    private ListaAluno pegaProximo(){
         return proxAluno;
     }
     
@@ -31,9 +48,7 @@ public class ListaAluno {
         aluno = vAluno;
     }
     
-    public void adicionaAluno(Aluno vAluno){
-        proxAluno = new ListaAluno();
-        proxAluno.recebaValorAluno(vAluno);        
+    private void recebaValorProx(ListaAluno vProx){
+        proxAluno = vProx;
     }
-
 }
