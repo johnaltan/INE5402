@@ -2,10 +2,12 @@ public class ListaAluno {
     
     private Aluno aluno;
     private ListaAluno proxAluno;
+    private ListaAluno cauda;
     
     public ListaAluno(){
         aluno = null;
         proxAluno = null;
+        cauda = this;
     }
     
     public Aluno pegaAluno(int nAluno){
@@ -32,8 +34,8 @@ public class ListaAluno {
     public void adicionaAluno(Aluno vAluno){
         ListaAluno novo = new ListaAluno();
         novo.recebaValorAluno(vAluno);
-        novo.recebaValorProx(proxAluno);
-        proxAluno = novo;
+        cauda.recebaValorProx(novo);
+        cauda = novo;
     }
     
     public Aluno informeAluno(){
