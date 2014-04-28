@@ -1,0 +1,7 @@
+Trabalho:
+
+    a) Escrever a classe Relogio conforme mostrada no exemplo.
+    b) Escreva um metodo main, que solicite do usuario varios horarios
+(hora, min, seg), com o horario instancie um objeto da classe Relogio e:
+        1) Determine e mostre qual o relógio que marca um maior horário;
+        2) Diga se foi ou não fornecido algum horario igual a 0:0:0;
