@@ -103,17 +103,16 @@ public class Ip{
     
     public String paraHexa(){
         String str = new String();
-        char[] b = {0};
         for(int m = n;m != 0; m >>= 4){
-           b[0] = (char)(m & 0xF);
-           b[0] = (char)(b[0] > 9 ? (b[0] + 0x41 - 10) : (b[0] + 0x30));
-           str = new String(b) + str;
+            char b = (char)(m & 0xF);
+            b = (char)(b > 9 ? (b + 0x41 - 10) : (b + 0x30));
+            str = Character.toString(b) + str;
         }
         return "0x" + str;
     }
     
     public boolean ePrimo(){
-        for (int m = n;m > 1;m--){
+        for (int m = n - 1;m > 1;m--){
             if ((n % m) == 0) return false;
         }
         return true;
