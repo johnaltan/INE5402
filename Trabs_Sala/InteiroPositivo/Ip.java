@@ -92,7 +92,7 @@ public class Ip{
             case 7:
                 return "sete";
             case 8:
-                return "oito";                
+                return "oito";
         }
         return "nove";
     }
@@ -104,7 +104,7 @@ public class Ip{
     public String paraHexa(){
         String str = new String();
         char[] b = {0};
-        for(int m = n;m != 0; m >>= 4){            
+        for(int m = n;m != 0; m >>= 4){
            b[0] = (char)(m & 0xF);
            b[0] = (char)(b[0] > 9 ? (b[0] + 0x41 - 10) : (b[0] + 0x30));
            str = new String(b) + str;
