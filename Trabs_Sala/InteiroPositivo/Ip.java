@@ -66,8 +66,7 @@ public class Ip{
     public int compara(Ip outro){
         if(outro.informeN() > n) return 1;
         if(outro.informeN() == n) return 0;
-        if(outro.informeN() < n) return -1;
-        return -255;
+        return -1;
     }
     
     public int soma(Ip outro){
@@ -93,11 +92,31 @@ public class Ip{
             case 7:
                 return "sete";
             case 8:
-                return "oito";
-            case 9:
-                return "nove";
+                return "oito";                
         }
-        return null;
+        return "nove";
+    }
+    
+    public double s2(){
+        return 0.0;
+    }
+    
+    public String paraHexa(){
+        String str = new String();
+        char[] b = {0};
+        for(int m = n;m != 0; m >>= 4){            
+           b[0] = (char)(m & 0xF);
+           b[0] = (char)(b[0] > 9 ? (b[0] + 0x41 - 10) : (b[0] + 0x30));
+           str = new String(b) + str;
+        }
+        return "0x" + str;
+    }
+    
+    public boolean ePrimo(){
+        for (int m = n;m > 1;m--){
+            if ((n % m) == 0) return false;
+        }
+        return true;
     }
 }
     
