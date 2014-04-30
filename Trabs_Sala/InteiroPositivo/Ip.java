@@ -26,11 +26,12 @@ public class Ip{
     }
     
     public int somaParesMenores(){
-        return ((2 + (n-1)) * (n-1)) / 4;
+        int sub = (ePar() ? 2 : 1);
+        return ((2 + (n-sub)) * (n-sub)) / 4;
     }
     
-    public int fatorial(){
-        int fat = 1;
+    public long fatorial(){
+        long fat = 1;
         int m = n;
         while (m > 0){
             fat *= m--;
@@ -39,12 +40,12 @@ public class Ip{
     }
     
     public int sorteio(){
-        return (Math.rand() % n);
+        return (int)(Math.random() * n);
     }
     
     public double s1(){
-        double s = 1;
-        for(int cont = n; cont > 0; cont--) s += cont / (n - (cont - 1));
+        double s = 0;
+        for(int cont = n; cont > 0; cont--) s += (double)cont / (n - (cont - 1));
         return s;
     }
     
@@ -66,6 +67,7 @@ public class Ip{
         if(outro.informeN() > n) return 1;
         if(outro.informeN() == n) return 0;
         if(outro.informeN() < n) return -1;
+        return -255;
     }
     
     public int soma(Ip outro){
@@ -95,5 +97,7 @@ public class Ip{
             case 9:
                 return "nove";
         }
+        return null;
     }
 }
+    
