@@ -69,8 +69,8 @@ public class Ip{
         return -1;
     }
     
-    public int soma(Ip outro){
-        return outro.informeN() + n;
+    public Ip soma(Ip outro){
+        return new Ip(outro.informeN() + n);
     }
     
     public String ultimoDigitoExtenso(){
