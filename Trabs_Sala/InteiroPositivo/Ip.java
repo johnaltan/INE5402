@@ -97,8 +97,20 @@ public class Ip{
         return "nove";
     }
     
-    public double s2(){
-        return 0.0;
+    public double s2(int qParcelas){
+        int chave = 1;
+        double s = 0;
+        int fat = 1;
+        int cont = 0;
+        
+        while(cont < qParcelas){
+            cont++;
+            fat = fat * cont;
+            double parcela = Math.pow(n,cont) / fat;
+            s = s + parcela * chave;
+            chave = chave * (-1);
+        }
+        return s;
     }
     
     public String paraHexa(){
