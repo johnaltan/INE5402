@@ -1,0 +1,20 @@
+Considere que uma conta bancaria é caracterizada por:
+
+	* Nome do correntista;
+	* Número da conta;
+	* Saldo;
+	* Limite (valor que pode ser sacado sem ter saldo).
+
+Escreva um programa que processe um conjunto de contas bancárias para cada conta bancária deve ser 
+apresentadado ao usuário um menu de opções conforme a seguir:
+
+	1 - Efetuar depósito;
+	2 - Efetuar saque;
+	3 - Consultar saldo;
+	4 - Sair da conta
+
+OBS: 	
+	1 -Uma conta bancária deve ser tratada como um objeto.
+	2 - Valor de depósito deve sempre ser positivo.
+	3 - O valor do saque também deve ser positivo.
+	4 - Só deve ser efetuado saque caso o saldo + limite >= valor do saque.
