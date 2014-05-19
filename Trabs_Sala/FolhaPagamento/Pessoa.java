@@ -2,7 +2,7 @@ public class Pessoa
 {
     private String nome;
     private char sexo;
-    private int idade;
+    protected int idade;
     public Pessoa (String vNome,char vS, int vI)
     {
         nome = vNome;
