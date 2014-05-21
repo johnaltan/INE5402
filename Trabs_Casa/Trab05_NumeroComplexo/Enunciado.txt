@@ -1,0 +1,25 @@
+Escreva uma classe de forma que toda instância dessa classe 
+represente um numero complexo. Um número complexo é composto
+de dois valores onde o primeiro valor representa a parte real
+do número complexo e o segundo valor representa a parte imaginária.
+Matematicamente pode ser representado como:
+
+    a + b i
+    
+    a -> parte real
+    b -> parte imaginária
+    i -> sqrt(-1)
+    
+    Exemplo:
+        2.7 - 3.4 i
+        4.0 + 2.0 i 
+            - 3.0 i
+            
+Coloque na classe métodos para:
+    a) Retornar o valor da parte real do complexo;
+    b) Retornar da parte imaginária;
+    c) Retornar o seu conjugado;
+    d) Retornar o complexo que represente a soma, subtração, divisão, multiplicação do complexo executor com outro complexo;
+    e) Retornar o módulo do complexo;
+    f) Informar se o objeto executor representa ou não um complexo igual a outro complexo;
+    g) Método que retorna o complexo na forma de uma string;
