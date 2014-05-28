@@ -1,0 +1,2 @@
+Escreva uma classe de forma que toda instância desta classe represente
+uma coleção de valores inteiros.
