@@ -1,0 +1,14 @@
+Escreva um programa que analise o concurso MegaSena da Caixa Econômica Federal. O programa
+deve no método main simular o sorteio da MegaSena (6 números inteiros todos no intervalo
+de 1 a 60 e todos diferentes). Considere que cada apostador pode apostar de 6 até 10 números
+(todos no intervalo de 1 a 60 e todos diferentes). Considere que ao apostar 6 números o apostador
+pagará 1 real, se apostar 7 números pagará 7 reais, se apostar 8 números pagará 28 reais, se
+apostar 9 números pagará 168, se apostar 10 números pagará 1260 reais. O programa deve mostrar
+o nome e o total de pontos de cada apostador. O programa deve também mostrar o total arrecadado
+no concurso.
+
+Classes propostas:
+    * Principal;
+    * Interface;
+    * Apostador extends Pessoa;
+    ***(Não obrigatório)*** -> Concurso.
