@@ -30,19 +30,19 @@ public class Interface {
     }
     
     private static String pegueNome(){
-        return pegueString("Informe o nome do apostador:");
+        return Interface.pegueString("Informe o nome do apostador:");
     }
     
     private static char pegueSexo(){
         char vSexo;
         do{
-            vSexo = Character.toUpperCase(pegueChar("Informe o sexo do apostador:"));
+            vSexo = Character.toUpperCase(Interface.pegueChar("Informe o sexo do apostador:"));
         } while(vSexo != 'M' && vSexo != 'F' && vSexo != 'O');
         return vSexo;
     }
     
     private static int pegueIdade(){
-        return pegueInt("Informe a idade do apostador:");
+        return Interface.pegueInt("Informe a idade do apostador:");
     }
     
     private static int[] pegueApostas(){
