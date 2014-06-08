@@ -19,7 +19,9 @@ public class Concurso{
     
         
     public int[] informeSorteados(){
-        return sorteados;
+        int[] n = new int[sorteados.length];
+        for(int i = 0; i < n.length; i++) n[i] = sorteados[i];
+        return n;
     }
     
     public int informeTotalArrecadado(){

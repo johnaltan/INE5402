@@ -21,7 +21,9 @@ public class Apostador extends Pessoa{
     }
     
     public int[] informeApostados(){
-        return apostados;
+        int[] n = new int[apostados.length];
+        for(int i = 0; i < n.length; i++) n[i] = apostados[i];
+        return n;
     }
     
     public int informePontos(){
