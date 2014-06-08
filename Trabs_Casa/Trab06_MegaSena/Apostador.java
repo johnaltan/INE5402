@@ -14,7 +14,9 @@ public class Apostador extends Pessoa{
     
     public Apostador(String vNome, char vS, int vI, int[] vApostados){
         super(vNome,vS,vI);
-        apostados = vApostados;
+        apostados = new int[vApostados.length];
+        for(int i = 0; i < vApostados.length;i++)
+            apostados[i] = vApostados[i];
         pontos = 0;
     }
     
