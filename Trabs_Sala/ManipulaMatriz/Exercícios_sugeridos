@@ -1,0 +1,9 @@
+Exercícios complementares sugeridos:
+
+* Método que informa se uma matriz é ou não triangular superior (dever ser quadrada
+e todos elementos abaixo da diagonal devem ser nulos);
+* Método que informa se uma matriz é ou não simétrica;
+* Método que diga se uma matriz tem ou não alguma linha nula;
+* Método que diga se uma matriz tem ou não duas ou mais linhas iguais;
+* Método que retorne com aqueles elementos da matriz que sejam simultaneamente o máximo
+de sua linha e o máximo de sua coluna.
