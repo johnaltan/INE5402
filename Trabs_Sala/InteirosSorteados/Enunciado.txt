@@ -1,0 +1,3 @@
+Escreva um programa que sorteie n números inteiros todos no intervalo [0,20]. Após
+determine a frequência de cada um dos valores de 0 a 20. Após imprima cada valor de 
+0 a 20 juntamente com sua frequência
