@@ -1,0 +1,10 @@
+Uma revendedora de automoveis tem para cada carro que esta a venda o ano do carro, a marca e o preço de venda.
+Escreva um programa que:
+
+  a) Armazene todos os dados na memoria;
+  b) Determine e mostre o carro mais caro da revendedora;
+
+OBS:
+  Considere como marcas validas as seguintes marcas:
+    Fiat, Ford, GM, VW, Toyota, Honda, Renault, Kia,
+    Citroen, Peugeot, Hyundai, BMW.
