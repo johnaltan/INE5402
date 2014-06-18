@@ -1,5 +1,7 @@
 public class Principal{
   public static void main(String[] args){
-    System.out.println(ManipulaString.geraSenha((int)'0'));
+    if(!args[0].isEmpty()){
+      System.out.println("Palavras " + ManipulaString.quantPalavras(args[0]));
+    }
   }
 }

@@ -58,4 +58,52 @@ public class ManipulaString{
     }
     return ret;
   }
+  
+  public static boolean ehPalindromo(String s){ // testado na metodologia POG
+    s = s.trim().toUpperCase();
+    for (int i = 0; i < (s.length() / 2);i++){
+      if (s.charAt(i) != s.charAt(s.length() - i - 1)){
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  public static String maior(String[] s){
+    if(s == null) 
+      return null;
+    String maior = s[0].trim();
+    for(int i = 1; i < s.length; i++){
+      if(s[i].trim().toLowerCase().compareTo(maior.toLowerCase()) > 0) 
+        maior = s[i].trim();
+    }
+    return maior;
+  }
+  
+  public static char letraMaisUtilizada(String texto){
+    char[] s = texto.toUpperCase().toCharArray();
+    int[] cont = new int[26];
+    for(int i = 0; i < s.length; i++){
+      if(s[i] >= 'A' && s[i] <= 'Z')
+        cont[s[i] - 'A']++;
+    }
+    byte pos = 0;
+    int max = cont[0];
+    for(byte i = 0; i < cont.length; i++){
+      if(cont[i] > max){
+        max = cont[i];
+        pos = i;
+      }
+    }
+    return (char)('A' + pos);
+  }
+  
+  public static int quantPalavras(String texto){
+    String[] split = texto.split(" ");
+    int quant = split.length;
+    for(int i = 0; i < split.length; i++)
+      if(split[i].equals(""))
+        quant--;
+    return quant;
+  }
 }
