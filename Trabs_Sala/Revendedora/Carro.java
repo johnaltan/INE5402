@@ -2,15 +2,21 @@ public class Carro{
   private int ano;
   private String marca;
   private double preco;
+  public final static String[] marcas = {"fiat","ford","GM","toyota","honda",
+                      "renault","kia","citroen","peugeot",
+                      "hyundai","bmw","volkswagem"}; 
   
   public static boolean eMarcaValida(String m){
-    String[] marcas = {"fiat","ford","GM","toyota","honda",
-                      "renault","kia","citroen","peugeot",
-                      "hyundai","bmw"};
-    for(String s : marcas)
+    for(String s : Carro.marcas)
       if(s.equalsIgnoreCase(m.trim()))
         return true;
     return false;    
+  }
+  
+  public Carro(){
+    ano = 0;
+    marca = "Nao definida";
+    preco = 0.0;
   }
   
   public Carro(int vAno, String vMarca, double vPreco){
@@ -23,7 +29,7 @@ public class Carro{
       marca = "Nao definida";
     preco = vPreco;
     if(preco < 0)
-      preco = 0;    
+      preco = 0.0;    
   }
   
   public boolean recebaAno(int vAno){
@@ -57,6 +63,12 @@ public class Carro{
   
   public double informePreco(){
     return preco;
+  }
+  
+  public String toString(){
+    return "Ano: " + ano + "\n" + 
+           "Marca: " + marca + "\n" + 
+           "Preco: " + preco + "\n";
   }
   
 }
